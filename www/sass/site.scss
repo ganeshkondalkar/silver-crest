@@ -1,0 +1,20 @@
+body {
+	font-family: 'Open Sans';
+	font-size: 15px; color: #595a5c;
+	background: #e7e7e7;
+	min-height: 2000px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+/* PARALLAX */
+.parallax-box {
+	width: 100%;
+	min-height: 750px; // 35em
+}
+
+#about-prlx-box {
+	background-color: #f05a61;
+}

@@ -1,0 +1,38 @@
+#project-row {
+	@extend %common-height;
+	@extend %box-shadow;
+	padding: 45px 0 65px;
+	background-image: url('../img/img-project-row.jpg');
+	background-position: center 0;
+	background-size: auto;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	overflow: hidden;
+
+	.project-info, h5 {
+		font-size: 17px;
+	}
+
+	.project-info, h5 {
+		color: #4d4d4f;
+		overflow: hidden;
+		padding: 15px;
+		background-color: rgba(255,255,255,0.5);
+	}
+
+	.project-info {
+		overflow-y: scroll;
+		position: relative;
+	}
+
+	.project-img-wrapper {
+		margin-bottom: 20px;
+	}
+
+	.read-more-link {
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+	}
+
+}

@@ -1,0 +1,15 @@
+.disclaimer-row {
+	color: #a7a9ac;
+	padding-bottom: 30px;
+	background: #081123;
+
+	hr { border-top-color: #a7a9ac; }
+}
+
+#disclaimer {
+	position: relative;
+	
+	.disclaimer-link {
+		position: absolute; right: 10px; bottom: 0;
+	}
+}

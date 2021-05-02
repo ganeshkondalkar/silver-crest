@@ -1,0 +1,16 @@
+#work-progress-row {
+	@extend %common-height;
+	@extend %box-shadow;
+	padding: 45px 0 65px;
+	background-image: url('../img/img-project-row.jpg');
+	// background-image: url('../img/img-home-row.jpg');
+	background-position: center center;
+	background-size: auto; 
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	overflow: hidden;
+
+	.carousel-wrapper h5 {
+		margin-left: 35px;
+	}
+}

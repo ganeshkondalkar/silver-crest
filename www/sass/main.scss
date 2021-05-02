@@ -1,0 +1,28 @@
+@import "lib/bootstrap/bootstrap.min";
+@import "lib/owl-carousel/owl.carousel.min";
+@import "lib/owl-carousel/owl.theme.default.min";
+
+@import "modules/global";
+
+// landing page
+@import "modules/landing-page";
+
+@import "modules/nav";
+@import "modules/carousel";
+
+// all pages.
+@import "modules/home";
+@import "modules/about";
+@import "modules/project";
+@import "modules/project-plan";
+@import "modules/work-progress";
+@import "modules/downloads";
+@import "modules/gmap";
+@import "modules/disclaimer-row";
+@import "modules/contact";
+
+// floor-plan.html - page
+@import "modules/floor-plan-page";
+
+// work-in-progress.html - page
+@import "modules/work-in-progress-page";

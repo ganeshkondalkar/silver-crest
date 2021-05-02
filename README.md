@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+# The Silver Crest Project
+Website [Landing page](http://www.thesilvercrest.in/).
 
-You can use the [editor on GitHub](https://github.com/ganeshkondalkar/silver-crest/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Project Information:
+> This is Responsive Website Design (RWD) & Single Page App (SPA).
+> Developed using below technology stack.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Tech
+- **Grunt.JS** is used for Code bundling.
+- **Twitter Bootstrap** is used for styling the layout & responsive grid.
+- **jQuery** is used for all JavaScript coding.
+- **SASS** is used for compiling CSS.
 
-### Markdown
+## Application Bootstrap:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Run below command for **development** instance:
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+grunt dev
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Run below command for **production** instance:
+```
+grunt build
+```
 
-### Jekyll Themes
+## Developed & Maintained by:
+| Author | Email |
+| ---- | ---- |
+|  Ganesh Kondalkar | ganesh.kondalkar@gmail.com |
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ganeshkondalkar/silver-crest/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Fill free to [contact me][EMAIL] OR to check my other project visit my [Github page][GITHUB].
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[GITHUB]: <https://github.com/ganeshkondalkar/>
+[EMAIL]: <ganeshkondalkar@gmail.com>

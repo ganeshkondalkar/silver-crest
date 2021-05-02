@@ -1,0 +1,37 @@
+#wip-page-row {
+	@extend %box-shadow;
+	@extend %common-height;
+	padding: 45px 0 65px;
+	background-image: url('../img/img-wip-page.jpg');
+	background-position: center 0;
+	background-size: auto;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+	.logo-silver-crest {
+		@extend %logo-silver-crest;
+	}
+}
+
+#wip-container {
+
+	.wip-row {
+		@extend %box-shadow;
+		@extend %common-height;
+		padding: 95px 0 45px;
+
+		&:nth-child(1) { background: #acdff0; }
+		&:nth-child(2) { background: #c6eaf8; }
+		&:nth-child(3) { background: #ffebbc; }
+		&:nth-child(4) { background: #fff8dc; }
+		&:nth-child(5) { background: #daebc1; }
+		&:nth-child(6) { background: #f1f8e8; }
+		&:nth-child(7) { background: #acdff0; }
+		&:nth-child(8) { background: #c6eaf8; }
+
+		h4 {
+			color: #4d4c51;
+		}
+	}
+
+}
