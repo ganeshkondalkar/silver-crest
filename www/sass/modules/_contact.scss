@@ -1,0 +1,19 @@
+#contact,
+#back-btn {
+	color: #fff; padding: 10px 10px 10px 45px;
+	position: fixed; bottom: 45%; right: 10px; z-index: 1;
+	background: url('../img/icon-call.png') no-repeat 10px center rgba(0,0,0,0.5);
+    cursor: pointer;
+
+    p {
+    	margin: 0;
+    }
+}
+
+#back-btn {
+	left: 10px; right: auto; z-index: 2;
+	width: 61px; height: 61px;
+	background-image: url('../img/icon-left-arrow.png');
+	background-position: 17px center;
+	background-size: auto 75%;
+}

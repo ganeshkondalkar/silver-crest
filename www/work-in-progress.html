@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta content="Silver Crest Project" name="description">
+    <title>Silver Crest - Work in progress Page</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- FONTS -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
+
+	<script src="js/vendor.js"></script>
+
+    <!-- SCRIPTS & CSS LOADER:
+ 		this utility is to avoid cache issue,
+ 		while loading the JS & CSS files.
+	-->
+	<script>
+	  	$(function(){
+	  		var Content = {
+				loadContent: function(files, fileType){
+					var node,
+						date = new Date(),
+						dt = date.getTime();
+
+					files.forEach(function(fileSrc){
+						var src = fileSrc + "?d=" + dt;
+						node = (fileType === "js") ? '<script src=\"' + src + '\"><\/script>' : 
+							'<link href=\"' + src + '\" rel=\"stylesheet\" type=\"text/css\">';
+						$("head").append(node);
+					});
+				},
+
+				load: function(){
+					var scripts = ["js/main.js"],
+					styles = ["css/main.css"];
+
+					Content.loadContent(styles, "css");
+					Content.loadContent(scripts, "js");
+				}
+			};
+
+			// LOAD SCRIPTS, CSS
+			Content.load();
+	  	});
+	  </script>
+</head>
+<body class="silver-crest wip-page">
+
+	<div id="site" class="container-fluid">
+		<div class="row">
+			<a href="index.html" id="logo">
+				<img src="img/logo-silver-crest-dark.png" alt="Silver Crest - Home Page">
+			</a>
+			<!-- / LOGO -->
+
+			<div id="nav-bar">
+				<a id="menu-btn" href="#">
+					<span class="menu-title">MENU</span>
+					<span class="active-menu">HOME</span>
+					<div class="lines">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</a>
+				<div class="nav-list">
+					<a href="index.html" class="active">HOME</a>
+					<!-- <a href="#about-row">ABOUT</a>
+					<a href="#project-row">PROJECT</a>
+					<a href="#project-plan-row">PLAN</a>
+					<a href="#work-progress-row">PROJECT STATUS</a>
+					<a href="#downloads-row">DOWNLOADS</a> -->
+					<a href="#gmap-row">CONTACT</a>
+				</div>
+			</div>
+			<!-- /NAV-BAR -->
+
+			<div id="contact">
+				<p>+91 99050 20202</p>
+				<p>+91 98201 99652</p>
+			</div>
+			<!-- /call details -->
+
+			<a id="back-btn" href="index.html"> </a>
+			<!-- /Back button -->
+
+			<div class="container-fluid">
+
+				<div id="wip-page-row" class="row">
+					<div class="container">
+						<div class="col-md-3 logo-silver-crest">
+							<img class="img-responsive" src="img/image-silver-crest.png" alt="">
+						</div>
+					</div>
+				</div>
+				<!-- /CONTENT -->
+
+				<div id="wip-container" class="row">
+					<!-- DYNAMIC CONTENT LOADED HERE -->
+				</div>
+				<!-- /floor-plan-container -->
+
+				<div id="gmap-row" class="row"></div>
+				<!-- /Google Map CONTENT -->
+			</div>
+		</div>
+		<div class="row disclaimer-row">
+			<!-- <div class="col-md-12"></div> -->
+			<div class="container">
+				<div id="disclaimer">
+					<h4>Disclaimer</h4>
+					<hr>
+					<p class="small-text">All the plans, drawings, layouts, amenities, facilities etc. are subject to approval of the respective authority and would be changed, if necessary...</p>
+					<p class="large-text hidden">All the plans, drawings, layouts, amenities, facilities etc. are subject to approval of the respective authority and would be changed, if necessary. The final discretion remains with the developers. All rendering and maps are artist’s conception and not actual depiction of the building walls, driveways or landscaping and the developer reserves the right to make changes at any time, without notice or obligation, to the information contained in this website/brochure, including and without limitation to areas, amenities and specifications. The developer does not warrant or assume any legal liability or driveways or landscaping and the developer reserves the right to make changes at any time, without notice or obligation, to the information contained in this website/brochure, including and without limitations to areas, amenities and specifications. The developer does not warrant or assume any legal liability or responsi-bility for the accuracy, completeness or usefulness of any information disclosed. In case of any doubt or clarification required, feel free to contact us at <u>hitechultrahomes@gmail.com</u></p>
+					<a href="#" class="disclaimer-link">
+						Read More
+						<span class="glyphicon glyphicon-menu-down"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<footer>
+				<span class="copy">Copyright &copy; 2018 Hi-tech Ultra Homes Pvt. Ltd</span>
+				<span class="company">
+					Powered by: <a href="http://synthesisadvertising.com/" target="_blank">Synthesis Advertising</a>
+				</span>
+			</footer>
+		</div>
+	</div>
+
+	<div id="full-screen-modal" class="modal fade" tabindex="-1"
+		role="dialog" aria-labelledby="wip-modal">
+		<div class="modal-dialog modal-lg" role="document">
+
+			<div class="modal-content">
+				
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+        			<h4 class="modal-title" id="wip-modal-label"> </h4>
+				</div>
+				<!-- /modal-header -->
+
+				<div class="modal-body">
+
+					<!-- / -->
+					<div class="carousel-wrapper">
+						<div class="container-fluid">
+							<div class="row">
+							<!-- / -->
+							<div id="wip-carousel" class="carousel container-fluid">
+								<ul>
+									<!-- LOAD DYNAMIC LIs -->
+								</ul>
+							</div>
+							<!-- / -->
+							</div>
+						</div>
+
+						<a href="#" class="wip-control-prev control-prev">
+							<img class="img-responsive" src="img/icon-left-arrow.png" alt="left arrow" />
+						</a>
+		                <a href="#" class="wip-control-next control-next">
+		                	<img class="img-responsive" src="img/icon-right-arrow.png" alt="right arrow" />
+		                </a>
+						
+						<div class="container">
+							<div class="row">
+								<p class="wip-pagination carousel-pagination"></p>
+							</div>
+						</div>
+
+					</div>
+					<!-- / -->
+
+				</div>
+				<!-- /modal-body -->
+
+			</div>
+		
+		</div>
+	</div>
+	<!-- /full-screen-modal -->
+
+</body>
+</html>

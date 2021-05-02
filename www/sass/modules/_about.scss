@@ -1,0 +1,27 @@
+#about-row {
+	@extend %box-shadow;
+	@extend %common-height;
+	padding: 150px 0;
+	background: url('../img/img-highlight.png') no-repeat center 0 #f05a61;
+
+	.logo-hitech-wrapper {
+		margin-left: 5.45%;
+	}
+
+	.img-skyscrapers {
+		margin-top: 120px;
+		opacity: 0.4;
+	}
+
+	.thumbnails {
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		p {
+			color: #fff;
+			margin-top: 20px;
+		}
+	}
+}

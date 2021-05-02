@@ -1,0 +1,82 @@
+$minWidthBreakPoint: 1349px;
+$maxPos: 15em;
+
+// JCAROUSEL
+.carousel-wrapper {
+	position: relative;
+
+	.control-prev,
+	.control-next {
+		text-decoration: none;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+
+		&:before {
+			content: "";
+			height: 100%;
+		}
+
+		&:before,
+		img {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		img {
+			width: 50%;
+		}
+	}
+
+	.control-prev {
+		text-align: right;
+	}
+
+	h5 {
+		margin-left: 20px;
+		font-size: 18px;
+	}
+
+	.carousel {
+		position: relative;
+		overflow: hidden;
+
+		ul {
+			width: 20000em;
+		    position: relative;
+		    list-style: none;
+		    margin: 0;
+		    padding: 0;
+		}
+
+		li {
+			/* this will be used by slider to dynamically calculate the slide width */
+			width: 100%;
+			margin-left: -15px;
+			float: left;
+		}
+	}
+
+	.carousel-pagination {
+		text-align: right;
+
+		a {
+			font-size: 0px;
+			color: transparent;
+			background: #fff;
+			margin-left: 10px;
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+
+			.floor-plan-page & {
+				background: #ccc;
+			}
+
+			&.active {
+				background: #2384c6;
+			}
+		}
+	}
+}

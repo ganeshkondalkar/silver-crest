@@ -1,0 +1,21 @@
+#home-row {
+	@extend %box-shadow;
+	@extend %common-height;
+	padding: 45px 0 65px;
+	background-image: url('../img/img-home-row.jpg');
+	background-position: center 0;
+	background-size: auto;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.home-parallax-content {
+	position: relative;
+	text-align: justify;
+
+	&:first-of-type {
+		padding: 80px 0 50px;
+	}
+
+}

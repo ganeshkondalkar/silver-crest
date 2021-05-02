@@ -1,0 +1,36 @@
+#gmap-row {
+	@extend %box-shadow;
+	position: relative;
+	min-height: 600px;
+
+	.contact-us {
+		position: relative;
+		z-index: 1;
+		padding: 40px 40px 40px 0;
+		margin: 100px 0 0;
+		width: 52%;
+		background-color: #2384c6; // blue
+	}
+
+	.content {
+		padding-left: 6.5em;
+	}
+
+	.info_content {
+		color: #868484;
+	}
+
+	#arr-link {
+		cursor: pointer; display: block;
+		position: absolute; width: 50px;
+		right: 0; top: 0; bottom: 0;
+		background: rgba(255, 255, 255, 0.2);
+
+		&.glyphicon-chevron-left:before,
+		&.glyphicon-chevron-right:before {
+			position: absolute;
+		    top: 46%; left: 35%;
+		}
+
+	}
+}
